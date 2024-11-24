@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Home.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+import 'Pages/Home.dart';
 //import 'dart:io';
 
 void main() {

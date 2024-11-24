@@ -7,12 +7,12 @@ class ItemBar extends StatelessWidget {
   final String name;
 
   const ItemBar({
-    Key? key,
+    super.key,
     required this.image,
     required this.price,
     required this.location,
     required this.name,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class ItemBar extends StatelessWidget {
                   child: Center(
                     child: Text(
                       image,
-                      style: TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                     ),
                   ),
                 )
@@ -50,11 +50,11 @@ class ItemBar extends StatelessWidget {
                   children: [
                     Text(
                       name,
-                      style: TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                     ),
                     Text(
                       "$price • $location",
-                      style: TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                     ),
                   ],
                 ),
@@ -63,7 +63,7 @@ class ItemBar extends StatelessWidget {
                 flex: 1,
                 fit: FlexFit.tight,
                 child: Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "ADD TO LIST",
                       style: TextStyle(color: Colors.blue),

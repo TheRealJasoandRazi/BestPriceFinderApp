@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'ItemBar.dart';
+import '../Template_Assets/ItemBar.dart';
+import '../CustomSearchBar.dart';
+//import 'package:input_history_text_field/input_history_text_field.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -35,12 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           const Expanded(
             flex: 1, 
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Will need to make a widget for the search bar"),
-              ],
-            ),
+            child: CustomSearchBar(),
           ),
           Expanded(
             flex: 4,
